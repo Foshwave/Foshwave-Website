@@ -1,0 +1,139 @@
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+    color: #fbfefe;
+    font-family: lexend;
+    text-decoration: none;
+    margin: 0;
+}
+
+.primary
+{
+    background-color: #539696;
+}
+.primary-transparent
+{
+    background-color: #53969650;
+}
+.secondary
+{
+    background-color: #bacade;
+}
+.secondary-transparent
+{
+    background-color: #bacade50;
+}
+.accent
+{
+    background-color: #84999c;
+}
+.accent-transparent
+{
+    background-color: #84999c50;
+}
+
+.text-shadow
+{
+    text-shadow: 4px 4px 6px rgba(66, 66, 66, 1);
+}
+
+.rounded-s
+{
+    border-radius: 5px;
+}
+.rounded-m
+{
+    border-radius: 15px;
+}
+.rounded-l
+{
+    border-radius: 25px;
+}
+.rounded-x
+{
+    border-radius: 10000px;
+}
+
+.glass-strong
+{
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0px -4px 8px 2px rgba(255, 255, 255, 0.8), 0px 8px 16px 2px rgba(0, 0, 0, 0.38);
+}
+.glass-medium
+{
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0px -2px 4px 2px rgba(255, 255, 255, 0.4), 0px 8px 16px 2px rgba(0, 0, 0, 0.38);
+}
+.glass-weak
+{
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0px -1px 2px 2px rgba(255, 255, 255, 0.2), 0px 8px 16px 2px rgba(0, 0, 0, 0.38);
+}
+
+.noise-weak
+{
+    background-image: url(../img/png/noise-weak.png);
+    background-blend-mode: color;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+}
+.noise-medium
+{
+    background-image: url(../img/png/noise-medium.png);
+    background-blend-mode: color;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+}
+.noise-strong
+{
+    background-image: url(../img/png/noise-strong.png);
+    background-blend-mode: color;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.clip
+{
+    overflow: hidden;
+}
+
+.line-x
+{
+    height: 1px;
+    width: 100%;
+}
+
+.link-button
+{
+    opacity: 0.5;
+    transition: 0.1s;
+}
+.link-button:hover
+{
+    opacity: 1;
+}
+
+.to-top > div
+{
+    transition: 0.1s;
+    transition-property: transform;
+}
+.to-top:hover > div
+{
+    transform: translateY(-5px);
+}
+.to-top:active > div
+{
+    transform: translateY(-5px) scale(0.95);
+}

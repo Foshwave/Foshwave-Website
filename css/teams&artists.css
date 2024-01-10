@@ -1,0 +1,10 @@
+#ta-card
+{
+    transition: 0.5s;
+    cursor: default;
+}
+#ta-card:hover
+{
+    transform: translateX(15px) scale(1.02);
+    cursor: default;
+}

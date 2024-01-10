@@ -1,0 +1,75 @@
+.artists-expandable1 > div,
+.artists-expandable2 > div,
+.artists-expandable3 > div,
+.artists-expandable4 > div,
+.artists-expandable5 > div,
+.artists-expandable6 > div,
+.artists-expandable7 > div,
+.artists-expandable8 > div
+{
+    transition: 0.5s;
+    transition-property: height;
+    height: 100px;
+}
+
+#artists-card1:checked ~ .artists-expandable1 > div,
+#artists-card2:checked ~ .artists-expandable2 > div,
+#artists-card3:checked ~ .artists-expandable3 > div,
+#artists-card4:checked ~ .artists-expandable4 > div,
+#artists-card5:checked ~ .artists-expandable5 > div,
+#artists-card6:checked ~ .artists-expandable6 > div,
+#artists-card7:checked ~ .artists-expandable7 > div,
+#artists-card8:checked ~ .artists-expandable8 > div
+{
+    height: 600px;
+}
+
+#artists-card1:checked ~ .artists-expandable1 > div > #card-overlay > #arrow,
+#artists-card2:checked ~ .artists-expandable2 > div > #card-overlay > #arrow,
+#artists-card3:checked ~ .artists-expandable3 > div > #card-overlay > #arrow,
+#artists-card4:checked ~ .artists-expandable4 > div > #card-overlay > #arrow,
+#artists-card5:checked ~ .artists-expandable5 > div > #card-overlay > #arrow,
+#artists-card6:checked ~ .artists-expandable6 > div > #card-overlay > #arrow,
+#artists-card7:checked ~ .artists-expandable7 > div > #card-overlay > #arrow,
+#artists-card8:checked ~ .artists-expandable8 > div > #card-overlay > #arrow
+{
+    transform: rotateZ(180deg);
+}
+
+.artists-expandable1,
+.artists-expandable2,
+.artists-expandable3,
+.artists-expandable4,
+.artists-expandable5,
+.artists-expandable6,
+.artists-expandable7,
+.artists-expandable8
+{
+    transition: 0.1s;
+    transition-property: transform;
+}
+
+.artists-expandable1:hover,
+.artists-expandable2:hover,
+.artists-expandable3:hover,
+.artists-expandable4:hover,
+.artists-expandable5:hover,
+.artists-expandable6:hover,
+.artists-expandable7:hover,
+.artists-expandable8:hover
+{
+    transform: translateY(-10px);
+    z-index: 1;
+}
+.artists-expandable1:active,
+.artists-expandable2:active,
+.artists-expandable3:active,
+.artists-expandable4:active,
+.artists-expandable5:active,
+.artists-expandable6:active,
+.artists-expandable7:active,
+.artists-expandable8:active
+{
+    transform: scale(0.99);
+    z-index: 1;
+}

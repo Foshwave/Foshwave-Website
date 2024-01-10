@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   enable-background="new 0 0 24 24"
+   viewBox="0 0 35 35"
+   id="patreon"
+   version="1.1"
+   sodipodi:docname="Patreon Logo.svg"
+   width="35"
+   height="35"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs144" />
+  <sodipodi:namedview
+     id="namedview142"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="16.791667"
+     inkscape:cx="13.012407"
+     inkscape:cy="16.436725"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="patreon" />
+  <path
+     d="m 1.1703528,1.869727 h 5.759306 v 31.397022 h -5.759306 z m 21.0005112,0 c -6.507373,0 -11.799819,5.2869856 -11.799819,11.784804 0,6.484167 5.292446,11.753406 11.799819,11.753406 6.489628,0 11.761599,-5.276064 11.761599,-11.753406 0,-6.4964533 -5.273336,-11.784804 -11.761599,-11.784804 z"
+     id="path139"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:1.36509" />
+</svg>

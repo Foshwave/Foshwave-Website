@@ -1,0 +1,57 @@
+.releases-expandable1 > div,
+.releases-expandable2 > div,
+.releases-expandable3 > div,
+.releases-expandable4 > div,
+.releases-expandable5 > div
+{
+    transition: 0.5s;
+    transition-property: height;
+    height: 100px;
+}
+
+#releases-card1:checked ~ .releases-expandable1 > div,
+#releases-card2:checked ~ .releases-expandable2 > div,
+#releases-card3:checked ~ .releases-expandable3 > div,
+#releases-card4:checked ~ .releases-expandable4 > div,
+#releases-card5:checked ~ .releases-expandable5 > div
+{
+    height: 600px;
+}
+
+#releases-card1:checked ~ .releases-expandable1 > div > #card-overlay > #arrow,
+#releases-card2:checked ~ .releases-expandable2 > div > #card-overlay > #arrow,
+#releases-card3:checked ~ .releases-expandable3 > div > #card-overlay > #arrow,
+#releases-card4:checked ~ .releases-expandable4 > div > #card-overlay > #arrow,
+#releases-card5:checked ~ .releases-expandable5 > div > #card-overlay > #arrow
+{
+    transform: rotateZ(180deg);
+}
+
+.releases-expandable1,
+.releases-expandable2,
+.releases-expandable3,
+.releases-expandable4,
+.releases-expandable5
+{
+    transition: 0.1s;
+    transition-property: transform;
+}
+
+.releases-expandable1:hover,
+.releases-expandable2:hover,
+.releases-expandable3:hover,
+.releases-expandable4:hover,
+.releases-expandable5:hover
+{
+    transform: translateY(-10px);
+    z-index: 1;
+}
+.releases-expandable1:active,
+.releases-expandable2:active,
+.releases-expandable3:active,
+.releases-expandable4:active,
+.releases-expandable5:active
+{
+    transform: scale(0.99);
+    z-index: 1;
+}

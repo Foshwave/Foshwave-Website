@@ -1,0 +1,73 @@
+.card
+{
+    flex-grow: 1;
+}
+
+.expandable1 > div,
+.expandable2 > div,
+.expandable3 > div,
+.expandable4 > div,
+.expandable5 > div,
+.expandable6 > div
+{
+    transition: 0.5s;
+    transition-property: height;
+    height: 100px;
+}
+
+#card1:checked ~ .expandable1 > div,
+#card2:checked ~ .expandable2 > div,
+#card3:checked ~ .expandable3 > div,
+#card4:checked ~ .expandable4 > div,
+#card5:checked ~ .expandable5 > div,
+#card6:checked ~ .expandable6 > div
+{
+    height: 600px;
+}
+
+#arrow
+{
+    transition: 0.5s;
+}
+
+#card1:checked ~ .expandable1 > div > #card-overlay > #arrow,
+#card2:checked ~ .expandable2 > div > #card-overlay > #arrow,
+#card3:checked ~ .expandable3 > div > #card-overlay > #arrow,
+#card4:checked ~ .expandable4 > div > #card-overlay > #arrow,
+#card5:checked ~ .expandable5 > div > #card-overlay > #arrow,
+#card6:checked ~ .expandable6 > div > #card-overlay > #arrow
+{
+    transform: rotateZ(180deg);
+}
+
+.expandable1,
+.expandable2,
+.expandable3,
+.expandable4,
+.expandable5,
+.expandable6
+{
+    transition: 0.1s;
+    transition-property: transform;
+}
+
+.expandable1:hover,
+.expandable2:hover,
+.expandable3:hover,
+.expandable4:hover,
+.expandable5:hover,
+.expandable6:hover
+{
+    transform: translateY(-10px);
+    z-index: 1;
+}
+.expandable1:active,
+.expandable2:active,
+.expandable3:active,
+.expandable4:active,
+.expandable5:active,
+.expandable6:active
+{
+    transform: scale(0.99);
+    z-index: 1;
+}

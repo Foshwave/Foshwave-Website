@@ -1,0 +1,53 @@
+#curated-parent,
+#releases-parent,
+#compilations-parent,
+#artists-parent
+{
+    transition: 0.05s;
+    transition-property: background-color;
+}
+#curated-parent:hover,
+#releases-parent:hover,
+#compilations-parent:hover,
+#artists-parent:hover
+{
+    background-color: #bacade30;
+}
+
+#SScurated ~ div > label > #curated-selector,
+#SSreleases ~ div > label > #releases-selector,
+#SScompilations ~ div > label > #compilations-selector,
+#SSartists ~ div > label > #artists-selector
+{
+    transition: 0.1s;
+    transition-property: background-color;
+    background-color: transparent;
+}
+
+#SScurated:checked ~ div > label > #curated-selector,
+#SSreleases:checked ~ div > label > #releases-selector,
+#SScompilations:checked ~ div > label > #compilations-selector,
+#SSartists:checked ~ div > label > #artists-selector
+{
+    background-color: #bacade50;
+}
+
+#SScurated ~ #curated-list,
+#SSreleases ~ #releases-list,
+#SScompilations ~ #compilations-list,
+#SSartists ~ #artists-list
+{
+    transition: 0.2s;
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0px;
+}
+#SScurated:checked ~ #curated-list,
+#SSreleases:checked ~ #releases-list,
+#SScompilations:checked ~ #compilations-list,
+#SSartists:checked ~ #artists-list
+{
+    opacity: 1;
+    height: fit-content;
+    margin-bottom: 100px;
+}

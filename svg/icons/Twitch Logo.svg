@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256px"
+   height="268px"
+   viewBox="0 0 256 268"
+   version="1.1"
+   preserveAspectRatio="xMidYMid"
+   id="svg16"
+   sodipodi:docname="twitch-seeklogo.com.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5466418"
+     inkscape:cx="-30.711701"
+     inkscape:cy="67.242461"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <g
+     id="g14">
+    <path
+       d="M 28.15527,12.845695 12.28468,55.168619 V 224.44004 h 58.165123 v 31.7574 h 31.755777 l 31.72415,-31.7574 h 47.5996 l 63.47911,-63.4564 V 12.845695 Z M 49.299292,33.993772 H 223.8555 V 150.38161 l -37.03489,37.03733 H 128.64656 L 96.931343,219.13253 V 187.41894 H 49.299292 Z M 107.48777,139.81503 H 128.6464 V 76.339166 h -21.15863 z m 58.17811,0 h 21.15457 V 76.339166 h -21.15457 z"
+       fill="#5A3E85"
+       id="path12"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.909077" />
+  </g>
+</svg>

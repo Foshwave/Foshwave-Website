@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/sections.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/teams&artists.css">
+        <link rel="stylesheet" href="css/releases-cards.css">
+        <link rel="stylesheet" href="css/compilations-cards.css">
+        <link rel="stylesheet" href="css/artists-cards.css">
+        <link rel="stylesheet" href="css/fonts/Braille.css">
+        <link rel="stylesheet" href="css/fonts/Lexend.css">
+    </head>
+
+    <body style="background: url('svg/background/helloworld.svg'), #0a2929; background-repeat: no-repeat; background-size: cover; overflow-x: hidden;">
+        <!--Background Gradient Overlay-->
+        <div style="position: absolute; top: 0; left: 0; bottom: 0; width: 100vw;">
+            <div style="background-image: linear-gradient(to bottom, transparent, #0a2929); height: 100%;"></div>
+            <div style="background-color: #0a2929; height: 500px;"></div>
+        </div>
+
+        <div style="position: relative; height: fit-content;">
+            <!--Sticky Header-->
+            <div class="secondary-transparent glass-strong noise-medium clip" style="transition: 2s; transition-property: width; position: fixed; z-index: 10000; top: 0; min-width: 450px; left: 50vw; transform: translateX(-50%); height: fit-content; width: 50vw; border-radius: 0 0 40px 40px; padding: 15px 0 15px 0;">
+                <div style="height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 50px; width: fit-content; margin-left: 15px; display: flex; align-items: center; cursor: pointer;">
+                            <img src="img/png/fwwhite.png" style="height: 50px; width: 50px;">
+                            <h2>
+                                Foshwave
+                            </h2>
+                        </div>
+                    </a>
+                    <!--Header Links-->
+                    <div style="height: 50px; width: fit-content; margin-right: 15px; display: flex; gap: 5px; justify-content: center; align-items: center;">
+                        <a href="https://www.discord.com/invite/yxs5zB9m9r" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <g id="\u56FE\u5C42_2" data-name="\u56FE\u5C42 2">
+                                    <g id="Discord_Logos" data-name="Discord Logos">
+                                        <g id="Discord_Logo_-_Large_-_White" data-name="Discord Logo - Large - White">
+                                            <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/foshwave" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M187.167 49.9999C180.75 52.9166 173.833 54.8333 166.667 55.7499C174 51.3333 179.667 44.3333 182.333 35.9166C175.417 40.0833 167.75 42.9999 159.667 44.6666C153.083 37.4999 143.833 33.3333 133.333 33.3333C113.75 33.3333 97.75 49.3333 97.75 69.0833C97.75 71.9166 98.0833 74.6666 98.6667 77.2499C69 75.7499 42.5833 61.4999 25 39.9166C21.9167 45.1666 20.1667 51.3333 20.1667 57.8333C20.1667 70.2499 26.4167 81.2499 36.0833 87.4999C30.1667 87.4999 24.6667 85.8333 19.8333 83.3333C19.8333 83.3333 19.8333 83.3332 19.8333 83.5832C19.8333 100.917 32.1667 115.417 48.5 118.667C45.5 119.5 42.3333 119.917 39.0833 119.917C36.8333 119.917 34.5833 119.667 32.4167 119.25C36.9167 133.333 50 143.833 65.75 144.083C53.5833 153.75 38.1667 159.417 21.3333 159.417C18.5 159.417 15.6667 159.25 12.8333 158.917C28.6667 169.083 47.5 175 67.6667 175C133.333 175 169.417 120.5 169.417 73.2499C169.417 71.6666 169.417 70.1666 169.333 68.5832C176.333 63.5832 182.333 57.2499 187.167 49.9999Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@foshwave" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M83.3333 125L126.583 100L83.3333 75.0001V125ZM179.667 59.7501C180.75 63.6667 181.5 68.9167 182 75.5834C182.583 82.2501 182.833 88.0001 182.833 93.0001L183.333 100C183.333 118.25 182 131.667 179.667 140.25C177.583 147.75 172.75 152.583 165.25 154.667C161.333 155.75 154.167 156.5 143.167 157C132.333 157.583 122.417 157.833 113.25 157.833L100 158.333C65.0833 158.333 43.3333 157 34.75 154.667C27.25 152.583 22.4166 147.75 20.3333 140.25C19.25 136.333 18.5 131.083 18 124.417C17.4166 117.75 17.1666 112 17.1666 107L16.6666 100C16.6666 81.7501 18 68.3334 20.3333 59.7501C22.4166 52.2501 27.25 47.4167 34.75 45.3334C38.6666 44.2501 45.8333 43.5001 56.8333 43.0001C67.6666 42.4167 77.5833 42.1667 86.75 42.1667L100 41.6667C134.917 41.6667 156.667 43.0001 165.25 45.3334C172.75 47.4167 177.583 52.2501 179.667 59.7501Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@foshwave" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M107.867 13.4255V131.484C107.867 144.526 97.2917 155.092 84.2583 155.092C71.2167 155.092 60.65 144.517 60.65 131.484C60.65 118.442 71.225 107.876 84.2583 107.876V76.3922C53.8333 76.3922 29.1667 101.059 29.1667 131.484C29.1667 161.909 53.8333 186.576 84.2583 186.576C114.683 186.576 139.35 161.909 139.35 131.484V76.3922L141.008 77.2255C150.267 81.8589 160.475 84.2672 170.825 84.2672V52.7755L169.883 52.5422C151.933 48.0589 139.342 31.9255 139.342 13.4255H107.867Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://open.spotify.com/user/31jwy2nac4d237dbfw6hjtklnhwm" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M149.167 90.8334C122.5 75.0001 77.9167 73.3334 52.5 81.2501C48.3333 82.5001 44.1667 80.0001 42.9167 76.2501C41.6667 72.0834 44.1667 67.9168 47.9167 66.6668C77.5 57.9168 126.25 59.5834 157.083 77.9168C160.833 80.0001 162.083 85.0001 160 88.7501C157.917 91.6667 152.917 92.9167 149.167 90.8334ZM148.333 114.167C146.25 117.083 142.5 118.333 139.583 116.25C117.083 102.5 82.9167 98.3334 56.6667 106.667C53.3333 107.5 49.5833 105.833 48.75 102.5C47.9167 99.1668 49.5833 95.4168 52.9167 94.5834C83.3333 85.4168 120.833 90.0001 146.667 105.833C149.167 107.083 150.417 111.25 148.333 114.167ZM138.333 137.083C136.667 139.583 133.75 140.417 131.25 138.75C111.667 126.667 87.0833 124.167 57.9167 130.833C55 131.667 52.5 129.583 51.6667 127.083C50.8333 124.167 52.9167 121.667 55.4167 120.833C87.0833 113.75 114.583 116.667 136.25 130C139.167 131.25 139.583 134.583 138.333 137.083ZM100 16.6667C89.0565 16.6667 78.2202 18.8222 68.1097 23.0101C57.9992 27.198 48.8126 33.3363 41.0744 41.0745C25.4464 56.7026 16.6667 77.8987 16.6667 100C16.6667 122.101 25.4464 143.298 41.0744 158.926C48.8126 166.664 57.9992 172.802 68.1097 176.99C78.2202 181.178 89.0565 183.333 100 183.333C122.101 183.333 143.298 174.554 158.926 158.926C174.554 143.298 183.333 122.101 183.333 100C183.333 89.0566 181.178 78.2203 176.99 68.1098C172.802 57.9993 166.664 48.8127 158.926 41.0745C151.187 33.3363 142.001 27.198 131.89 23.0101C121.78 18.8222 110.943 16.6667 100 16.6667Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/foshwave" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M96.3333 73.9164V141.666H169.333C184.75 140.583 191.667 131.083 191.667 119.416C191.667 107.083 182.333 97.1664 169.833 97.1664C166.667 97.1664 164 97.8331 161.25 98.9998C159.25 79.4998 142.667 64.2498 122.25 64.2498C112.5 64.2498 103.25 67.9164 96.3333 73.9164ZM89 82.4164C86.5 80.9164 83.8333 79.7498 80.9167 79.1664V141.666H92.5V77.8331C91.25 79.1664 90.0833 80.8331 89 82.4164ZM69.4167 77.9164V141.666H77.0833V78.1664C75.5 77.9164 73.9167 77.8331 72.25 77.8331C71.25 77.8331 70.3333 77.8331 69.4167 77.9164ZM54.1667 83.3331V141.666H61.75V79.4998C59 80.4164 56.4167 81.7498 54.1667 83.3331ZM40.25 104.166C39.75 104.166 39.25 103.666 38.6667 103.416V141.666H46.3333V90.4998C43.25 94.4998 41.1667 99.2498 40.25 104.166ZM23.25 101.833V140.916C25 141.416 27 141.666 29.1667 141.666H31V101.166C30.3333 101.083 29.6667 101 29.1667 101C27 101 25 101.333 23.25 101.833ZM8.33334 121.333C8.33334 127.583 11.1667 133.083 15.5833 136.833V105.916C11.1667 109.583 8.33334 115.166 8.33334 121.333Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://foshwave.bandcamp.com/" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M100.335 17C54.3132 17 17 54.3132 17 100.335C17 146.357 54.3132 183.67 100.335 183.67C146.357 183.67 183.67 146.357 183.67 100.335C183.67 54.3132 146.357 17 100.335 17ZM116.537 126.544H55.7369L84.1333 74.1331H144.933L116.537 126.544Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/foshwavenoises" target="_blank">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M65 16.6667H135C161.667 16.6667 183.333 38.3334 183.333 65.0001V135C183.333 147.819 178.241 160.113 169.177 169.177C160.113 178.241 147.819 183.333 135 183.333H65C38.3333 183.333 16.6667 161.667 16.6667 135V65.0001C16.6667 52.1813 21.7589 39.8875 30.8232 30.8233C39.8874 21.759 52.1812 16.6667 65 16.6667ZM63.3333 33.3334C55.3768 33.3334 47.7462 36.4941 42.1201 42.1202C36.494 47.7463 33.3333 55.3769 33.3333 63.3334V136.667C33.3333 153.25 46.75 166.667 63.3333 166.667H136.667C144.623 166.667 152.254 163.506 157.88 157.88C163.506 152.254 166.667 144.623 166.667 136.667V63.3334C166.667 46.7501 153.25 33.3334 136.667 33.3334H63.3333ZM143.75 45.8334C146.513 45.8334 149.162 46.9309 151.116 48.8844C153.069 50.8379 154.167 53.4874 154.167 56.2501C154.167 59.0128 153.069 61.6623 151.116 63.6158C149.162 65.5693 146.513 66.6668 143.75 66.6668C140.987 66.6668 138.338 65.5693 136.384 63.6158C134.431 61.6623 133.333 59.0128 133.333 56.2501C133.333 53.4874 134.431 50.8379 136.384 48.8844C138.338 46.9309 140.987 45.8334 143.75 45.8334ZM100 58.3334C111.051 58.3334 121.649 62.7233 129.463 70.5373C137.277 78.3513 141.667 88.9494 141.667 100C141.667 111.051 137.277 121.649 129.463 129.463C121.649 137.277 111.051 141.667 100 141.667C88.9493 141.667 78.3512 137.277 70.5372 129.463C62.7232 121.649 58.3333 111.051 58.3333 100C58.3333 88.9494 62.7232 78.3513 70.5372 70.5373C78.3512 62.7233 88.9493 58.3334 100 58.3334ZM100 75.0001C93.3696 75.0001 87.0107 77.634 82.3223 82.3224C77.6339 87.0108 75 93.3697 75 100C75 106.631 77.6339 112.989 82.3223 117.678C87.0107 122.366 93.3696 125 100 125C106.63 125 112.989 122.366 117.678 117.678C122.366 112.989 125 106.631 125 100C125 93.3697 122.366 87.0108 117.678 82.3224C112.989 77.634 106.63 75.0001 100 75.0001Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.threads.net/@foshwavenoises" target="_blank">
+                            <svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255); width: 28px; height: 28px; padding: 8px; filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 0.5px 1px);">
+                                <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Main Page Content-->
+            <div class="clip" style="position: absolute; top: 0; left: 0; margin-top: 150px; height: fit-content; width: 100vw; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: calc(100% - 30px); max-width: 1500px; padding-bottom: 500px;">
+                    <!--Title Card-->
+                    <div class="primary-transparent glass-strong noise-strong rounded-l clip" style="padding-left: 30px; padding-bottom: 15px; margin-bottom: 50px; width: 100%; transform: translateX(-15px);">
+                        <div style="display: flex; align-items: baseline; justify-content: flex-start;">
+                            <h1 style="font-size: 60px; margin-left: -8px;">
+                                Foshwave
+                            </h1>
+                            <img src="img/png/fwwhite.png" style="height: 25px; width: 25px; transform: translateY(6px);">
+                        </div>
+                        <h3 class="text-shadow" style="font-weight: 300; margin-top: -10px; margin-bottom: 20px; margin-right: 30px;">
+                            <i>A multi-genre music collective and label, unified in medley.</i>
+                        </h3>
+                        <div class="text-shadow" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px; opacity: 0.8;">
+                            <img src="svg/icons/Location.svg" style="height: 18px; width: auto;">
+                            <h3 style="font-weight: 300;">
+                                International
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div style="width: calc(100% + 30px); transform: translateX(-15px); display: flex; flex-direction: column; justify-content: center;">
+                        <!--Discord & Newest Release Embeds-->
+                        <div class="primary-transparent glass-strong noise-strong rounded-l clip" style="display: flex; flex-wrap: wrap; margin-bottom: 0x; width: 100vw; max-width: 100%; gap: 25px;">
+                            <div style="display: flex; flex-direction: column; gap: 10px; max-width: inherit; height: 500px; flex-shrink: 0; flex-grow: 1;">
+                                <div class="secondary-transparent glass-medium noise-medium rounded-s clip" style="display: flex; justify-content: center; max-width: inherit; height: 75px; display: flex; flex-direction: column; border-radius: 25px 25px 5px 5px;">
+                                    <h1 style="width: 100%; text-align: center;">
+                                        Community Server
+                                    </h1>
+                                </div>
+                                <div class="clip" style="position: relative; max-width: inherit; flex-grow: 1; display: flex; flex-direction: column; border-radius: 5px 5px 25px 25px;">
+                                    <iframe style="height: 100%; width: 100%;" src="https://discord.com/widget?id=824586285561544774&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                                    <div class="primary-transparent noise-strong glass-strong rounded-s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.2;"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 10px; max-width: inherit; height: 500px; flex-shrink: 0; flex-grow: 1;">
+                                <div class="secondary-transparent glass-medium noise-medium rounded-s clip" style="display: flex; justify-content: center; max-width: inherit; height: 75px; display: flex; flex-direction: column; border-radius: 25px 25px 5px 5px;">
+                                    <h1 style="width: 100%; text-align: center;">
+                                        Newest Release
+                                    </h1>
+                                </div>
+                                <div class="clip" style="position: relative; max-width: inherit; flex-grow: 1; display: flex; flex-direction: column; border-radius: 5px 5px 25px 25px;">
+                                    <iframe style="height: 100%; width: 100%;" src="https://www.youtube.com/embed/X0h9o9Xd3K4" title="[Chill Trap] Genasidal - Starstruck Highway" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div class="primary-transparent noise-strong glass-strong rounded-s" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.2;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="height: 50px; width: 100%; display: flex; justify-content: space-around; align-items: center;">
+                            <img src="svg/icons/up-chevron-svgrepo-com.svg" style="width: 25px; height: 25px; transform: rotate(180deg); opacity: 0.2;">
+                            <img src="svg/icons/up-chevron-svgrepo-com.svg" style="width: 25px; height: 25px; transform: rotate(180deg); opacity: 0.2;">
+                            <img src="svg/icons/up-chevron-svgrepo-com.svg" style="width: 25px; height: 25px; transform: rotate(180deg); opacity: 0.2;">
+                            <img src="svg/icons/up-chevron-svgrepo-com.svg" style="width: 25px; height: 25px; transform: rotate(180deg); opacity: 0.2;">
+                        </div>
+
+                        <!--Section Selectors-->
+                        <input type="radio" style="display: none;" name="SectionSelection" id="SScurated" checked>
+                        <input type="radio" style="display: none;" name="SectionSelection" id="SSreleases">
+                        <input type="radio" style="display: none;" name="SectionSelection" id="SScompilations">
+                        <input type="radio" style="display: none;" name="SectionSelection" id="SSartists">
+                        <div class="primary-transparent glass-medium noise-medium rounded-l clip" style="width: 100%; height: fit-content; margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+                            <label id="curated-parent" for="SScurated" style="cursor: pointer; flex-grow: 1; min-width: 200px;">
+                                <div id="curated-selector" class="clip glass-weak noise-weak rounded-s" style="position: relative; height: 50px; min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <h3 class="text-shadow" style="text-align: center;">
+                                        Curated Playlists
+                                    </h3>
+                                </div>
+                            </label>
+                            <label id="releases-parent" for="SSreleases" style="cursor: pointer; flex-grow: 1; min-width: 200px;">
+                                <div id="releases-selector" class="clip glass-weak noise-weak rounded-s" style="position: relative; height: 50px; min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <h3 class="text-shadow" style="text-align: center;">
+                                        Albums & EPs
+                                    </h3>
+                                </div>
+                            </label>
+                            <label id="compilations-parent" for="SScompilations" style="cursor: pointer; flex-grow: 1; min-width: 200px;">
+                                <div id="compilations-selector" class="clip glass-weak noise-weak rounded-s" style="position: relative; height: 50px; min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <h3 class="text-shadow" style="text-align: center;">
+                                        Compilations
+                                    </h3>
+                                </div>
+                            </label>
+                            <label id="artists-parent" for="SSartists" style="cursor: pointer; flex-grow: 1; min-width: 200px;">
+                                <div id="artists-selector" class="clip glass-weak noise-weak rounded-s" style="position: relative; height: 50px; min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <h3 class="text-shadow" style="text-align: center;">
+                                        Singles
+                                    </h3>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!--Curated Card List Flex-->
+                        <div id="curated-list" style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 20px; flex-wrap: wrap; width: 100%;">
+                            <input type="checkbox" id="card1" style="display: none;">
+                            <label class="expandable1 card" for="card1" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Full\ Collection\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Complete Collection
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/5WOMqX6ET8367lpIFZHz1v?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="card2" style="display: none;">
+                            <label class="expandable2 card" for="card2" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Chill\ Out\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 style="text-shadow: 4px 4px 6px rgba(66, 66, 66, 1); width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Chill Out
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/1n4MKeeCrCDPZEztEvUoPq?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="card3" style="display: none;">
+                            <label class="expandable3 card" for="card3" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Heavy\ Hitters\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 style="text-shadow: 4px 4px 6px rgba(66, 66, 66, 1); width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Heavy Hitters
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/0npypmG6OFHzztllvihGMj?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <input type="checkbox" id="card4" style="display: none;">
+                            <label class="expandable4 card" for="card4" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Powerup\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 style="text-shadow: 4px 4px 6px rgba(66, 66, 66, 1); width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Powerup!
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/5Cf15rmltUmE5Nfc4RzyFo?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <input type="checkbox" id="card5" style="display: none;">
+                            <label class="expandable5 card" for="card5" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Miscellany\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 style="text-shadow: 4px 4px 6px rgba(66, 66, 66, 1); width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Miscellany
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/5oMl0B7N2Mgtv50uuaRY6W?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <input type="checkbox" id="card6" style="display: none;">
+                            <label class="expandable6 card" for="card6" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/png/Finds\ Cover.png), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 style="text-shadow: 4px 4px 6px rgba(66, 66, 66, 1); width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Foshwave's Finds
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://open.spotify.com/embed/playlist/58yV5RlLwS04bVS7Hvjymm?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <!--Releases Card List Flex-->
+                        <div id="releases-list" style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 20px; flex-wrap: wrap; width: 100%;">
+                            <input type="checkbox" id="releases-card1" style="display: none;">
+                            <label class="releases-expandable1 card" for="releases-card1" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Computer\ Eyes\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Computer Eyes
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/orangebloom/computereyeszip" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="releases-card2" style="display: none;">
+                            <label class="releases-expandable2 card" for="releases-card2" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/CEMM\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        CE's Minerals & More
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/esoots/cesmineralsmore" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="releases-card3" style="display: none;">
+                            <label class="releases-expandable3 card" for="releases-card3" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/mrrrwrld\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        mrrrwrld
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/murphyu/mrrrwrld" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="releases-card4" style="display: none;">
+                            <label class="releases-expandable4 card" for="releases-card4" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Solar\ Sounds\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Solar Sounds
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/kovastellar/solarsounds" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="releases-card5" style="display: none;">
+                            <label class="releases-expandable5 card" for="releases-card5" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Headrush\ EP\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        HEADRUSH EP
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/h3ad8ke/headrushep" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <!--Compilations Card List Flex-->
+                        <div id="compilations-list" style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 20px; flex-wrap: wrap; width: 100%;">
+                            <input type="checkbox" id="compilations-card1" style="display: none;">
+                            <label class="compilations-expandable1 card" for="compilations-card1" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Best\ Of\ 2022.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Best Of 2022
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/bestof2022" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="compilations-card2" style="display: none;">
+                            <label class="compilations-expandable2 card" for="compilations-card2" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Apparations\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Apparations
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/apparitions" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="compilations-card3" style="display: none;">
+                            <label class="compilations-expandable3 card" for="compilations-card3" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Divergence\ II\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Divergence Volume II
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/divergencevolumeii" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="compilations-card4" style="display: none;">
+                            <label class="compilations-expandable4 card" for="compilations-card4" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/WInterscapes\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Winterscapes
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/winterscapes" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="compilations-card5" style="display: none;">
+                            <label class="compilations-expandable5 card" for="compilations-card5" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Divergence\ I\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Divergence Volume I
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/divergence" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="compilations-card6" style="display: none;">
+                            <label class="compilations-expandable6 card" for="compilations-card6" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Sampler\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Foshdown: Sampler
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/foshwave/foshdownsampler" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <!--Artists Card List Flex-->
+                        <div id="artists-list" style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 20px; flex-wrap: wrap; width: 100%;">
+                            <input type="checkbox" id="artists-card1" style="display: none;">
+                            <label class="artists-expandable1 card" for="artists-card1" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Starstruck\ Highway\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Starstruck Highway
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/genasidal/starstruckhighway" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card2" style="display: none;">
+                            <label class="artists-expandable2 card" for="artists-card2" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Pancake\ Remix\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        The Pancake (YōHa Remix)
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/squeet/thepancakeyoharemix" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card3" style="display: none;">
+                            <label class="artists-expandable3 card" for="artists-card3" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Genesis\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Genesis
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/yvndcore/genesis" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card4" style="display: none;">
+                            <label class="artists-expandable4 card" for="artists-card4" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Musings\ Of\ The\ Snow\ Princess\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Musings Of The Snow Princes / End Of You (And Me)
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/wyzard/musingsofthesnowprincess" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card5" style="display: none;">
+                            <label class="artists-expandable5 card" for="artists-card5" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Can\'t\ Believe\ You\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Can't Believe You_
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/orangebloom/cantbelieveyou" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card6" style="display: none;">
+                            <label class="artists-expandable6 card" for="artists-card6" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Nova\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Nova
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/kovastellarsidewalkshowdown/novafeatraynebo" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card7" style="display: none;">
+                            <label class="artists-expandable7 card" for="artists-card7" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Mumble\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Mumble.wav
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/orangebloom/mumblewav" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <input type="checkbox" id="artists-card8" style="display: none;">
+                            <label class="artists-expandable8 card" for="artists-card8" style="cursor: pointer;">
+                                <div class="secondary-transparent glass-medium rounded-l noise-weak clip" style="position: relative; min-height: 10px; min-width: 450px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; background-image: url(img/webp/Enchanting\ Darkness\ Cover.webp), url(img/png/noise-weak.png); background-size: cover, auto; background-position: center center, center center;">
+                                    <h1 class="text-shadow" style="width: 100%; text-align: center; margin: 20px 0 20px 0;">
+                                        Enchanting Darkness
+                                    </h1>
+                                    <div style="margin-top: 20px; position: relative; width: 100%; height: fit-content;">
+                                        <iframe style="border-radius: 15px;" src="https://hypeddit.com/artificialmusic/enchantingdarkness" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                        <div class="primary-transparent noise-strong glass-strong" style="mix-blend-mode: overlay; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px; pointer-events: none; opacity: 0.2;"></div>
+                                    </div>
+                                    <div id="card-overlay" style="position: absolute; bottom: 0px; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                                        <div class="noise-weak" style="position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #0a2929; opacity: 0.6;">
+                                            <div style="height: 3px; width: 100%; background-image: linear-gradient(to bottom, #bacade40, transparent);"></div>
+                                        </div>
+                                        <div id="arrow" style="margin-bottom: 10px; opacity: 0.5; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff;"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!--Team-->
+                        <div style="width: 100%; min-height: 250px; display: flex; gap: 50px; flex-wrap: wrap;">
+                            <div style="min-height: 250px; min-width: 400px; height: fit-content; flex-grow: 1; display: flex; flex-direction: column; gap: 10px;">
+                                <!--Title-->
+                                <div class="secondary-transparent glass-strong noise-strong clip" style="cursor: default; width: 100%; height: 100px; border-radius: 25px 25px 5px 5px; display: flex; align-items: center; align-content: center;">
+                                    <h1 style="text-align: center; width: 100%;">
+                                        Team Members
+                                    </h1>
+                                </div>
+                                <!--Body-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/wyz.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Wyzard
+                                        </h1>
+                                        <p>
+                                            Founder & Owner
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/welcome2wyzard" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/welcome2wyzard" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.youtube.com/@welcome2wyzard" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/welcome2wyzard" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://music.apple.com/us/artist/wyzard/1558494206" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Apple Music Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/kovastellar.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Kovastellar
+                                        </h1>
+                                        <p>
+                                            Producer & GFX Artist
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/Kovastellar" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/Kovastellar" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.youtube.com/MrMuffinMusic" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/2nNiAfY7iGaQVWf4XLo4BP" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.instagram.com/p/CbWhsxSsXWX/" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Instagram Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/ashelectric.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Ash Electric
+                                        </h1>
+                                        <p>
+                                            Editor & GFX Artist
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/ashelectric" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/itsashelectric" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.twitch.tv/ashelectric" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitch Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://ash-electric.bandcamp.com/" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Bandcamp Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/ashelectric" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/halfprism.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            halfprism
+                                        </h1>
+                                        <p>
+                                            Logo & Brand Designer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/halfprism" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/halfprism_" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.tumblr.com/tagged/halfprism" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Tumblr Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/halfprism" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.behance.net/halfprism" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Behance Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/yoha.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            YōHa
+                                        </h1>
+                                        <p>
+                                            Community Manager & Producer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://soundcloud.com/yokaihaven" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/2jSCV2jcDLh5EtkDuK2OfD" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://music.apple.com/us/artist/yoha/962290955" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Apple Music Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Footer-->
+                                <div class="secondary-transparent glass-strong noise-strong clip" style="width: 100%; height: 20px; border-radius: 5px 5px 25px 25px; display: flex; align-items: center; align-content: center;"></div>
+                            </div>
+
+                            <!--Artists-->
+                            <div style="min-height: 250px; min-width: 400px; height: fit-content; flex-grow: 1; display: flex; flex-direction: column; gap: 10px;">
+                                <!--Title-->
+                                <div class="secondary-transparent glass-strong noise-strong clip" style="cursor: default; width: 100%; height: 100px; border-radius: 25px 25px 5px 5px; display: flex; align-items: center; align-content: center;">
+                                    <h1 style="text-align: center; width: 100%;">
+                                        Artists
+                                    </h1>
+                                </div>
+                                <!--Body-->
+                                <!--Orange Bloom-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/orangebloom.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Orange Bloom
+                                        </h1>
+                                        <p>
+                                            Producer & Songwriter
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/orangebloom" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/_orangebloom_" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/orange-bloom" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/22429yLmUYju9dn53gsWqG" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.instagram.com/_orangebloom_/" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Instagram Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Squeet-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/squeet.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Squeet
+                                        </h1>
+                                        <p>
+                                            Producer & Songwriter
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/orangebloom" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.patreon.com/Squeet" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Patreon Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.youtube.com/c/Squeet" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/776CpbDF9HPQGfVdOTVf1u" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--ESoots-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/esoots.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            ESoots
+                                        </h1>
+                                        <p>
+                                            Producer & Sound Designer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://www.youtube.com/@esoots-music5966" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/5xDwohu4mh8ps6AqS6NBjL" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://music.apple.com/us/artist/esoots/1558962173" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Apple Music Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Daka-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/daka.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Daka
+                                        </h1>
+                                        <p>
+                                            Producer & Songwriter
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://www.youtube.com/channel/UCHmfiL9GZTD0IPtJUBbm4kw" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.twitch.tv/sidewalkshowdown" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitch Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/sidewalkshowdown" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--zTempest-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/ztempest.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            zTempest
+                                        </h1>
+                                        <p>
+                                            Producer & Composer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/ztempest" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://www.youtube.com/@zTempest31/videos" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/YouTube Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/ztempest" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://open.spotify.com/artist/3eDGnb38fWk847qiJ4j449" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Spotify Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://music.apple.com/de/artist/ztempest/1558961987" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Apple Music Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Hex_Edit+-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/hexedit.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            Hex_Edit+
+                                        </h1>
+                                        <p>
+                                            Producer & Designer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://murphy-u.bandcamp.com/" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Bandcamp Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/user-527465133" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/murphy-u" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--IGNISTIC-->
+                                <div id="ta-card" class="clip rounded-s primary-transparent glass-medium noise-medium" style="position: relative; width: 100%; height: fit-content; display: flex; align-items: center;">
+                                    <img class="rounded-s" src="img/webp/ignistic.webp" style="width: 150px; height: 150px;">
+                                    <div style="margin-left: 50px; height: 100%; width: fit-content; display: flex; flex-direction: column; justify-content: center;">
+                                        <h1>
+                                            IGNISTIC
+                                        </h1>
+                                        <p>
+                                            Producer
+                                        </p>
+                                    </div>
+                                    <div class="glass-medium primary-transparent noise-strong rounded-s" style="position: absolute; height: 150px; width: 150px; top: 0; left: 0; opacity: 0.35;"></div>
+                                    <div style="position: absolute; top: 0; right: 0; height: 30px; max-width: 100%; min-width: 30px; display: flex; gap: 5px; padding: 5px;">
+                                        <a href="https://linktr.ee/_ignistic_" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Linktree Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://discord.com/invite/mHTSYgPqw9" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Discord Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://twitter.com/_IGNISTIC_" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Twitter Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                        <a href="https://soundcloud.com/ignisticdubs" target="_blank" style="height: inherit; width: inherit;">
+                                            <img class="link-button" src="svg/icons/Soundcloud Logo.svg" style="height: inherit; width: inherit;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Footer-->
+                                <div class="secondary-transparent glass-strong noise-strong clip" style="width: 100%; height: 20px; border-radius: 5px 5px 25px 25px; display: flex; align-items: center; align-content: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: -500px;"></div>
+
+                <div style="position: relative; margin-top: 150px; width: 100vw; height: 100px; background-color: #020f14; display: flex; justify-content: center; align-items: center;">
+                    <p style="text-align: center; width: 100%; font-weight: 200;">
+                        <i>2023 Foshwave</i>
+                    </p>
+                    <div style="position: absolute; height: fit-content; width: calc(100% - 15px); max-width: 1500px; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: flex-end;">
+                        <a class="to-top" href="#">
+                            <div class="primary-transparent rounded-s" style="padding: 15px;">
+                                <img src="svg/icons/up-chevron-svgrepo-com.svg" style="width: 25px; height: 25px;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--The Funny Cookie Box-->
+        <!--
+        <div class="primary-transparent glass-strong rounded-l noise-strong clip" style="z-index: 10; position: fixed; bottom: 15px; left: 15px; height: 300px; width: 450px;">
+            <div style="width: calc(100% - 30px); height: 100%; margin: 15px;">
+                <h1 style="font-family: Lexend; margin: 0;">
+                    Cookie Settings 🍪
+                </h1>
+                <h3 style="font-family: Lexend; margin: 0; margin-top: 15px">
+                    Cookies are necessary to track your position on planet earth at all times. Accepting them is madatory, and you can reject them by closing this box.
+                </h3>
+                <h3 style="font-family: Lexend; margin: 0; margin-top: 15px">
+                    (This box cannot be closed.)
+                </h3>
+            </div>
+            <div class="rounded-x" style="position: absolute; top: 15px; right: 15px; height: 30px; width: 30px; background-color: white;"></div>
+        </div>
+        -->
+    </body>
+</html>

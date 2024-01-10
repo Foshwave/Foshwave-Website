@@ -1,0 +1,63 @@
+.compilations-expandable1 > div,
+.compilations-expandable2 > div,
+.compilations-expandable3 > div,
+.compilations-expandable4 > div,
+.compilations-expandable5 > div,
+.compilations-expandable6 > div
+{
+    transition: 0.5s;
+    transition-property: height;
+    height: 100px;
+}
+
+#compilations-card1:checked ~ .compilations-expandable1 > div,
+#compilations-card2:checked ~ .compilations-expandable2 > div,
+#compilations-card3:checked ~ .compilations-expandable3 > div,
+#compilations-card4:checked ~ .compilations-expandable4 > div,
+#compilations-card5:checked ~ .compilations-expandable5 > div,
+#compilations-card6:checked ~ .compilations-expandable6 > div
+{
+    height: 600px;
+}
+
+#compilations-card1:checked ~ .compilations-expandable1 > div > #card-overlay > #arrow,
+#compilations-card2:checked ~ .compilations-expandable2 > div > #card-overlay > #arrow,
+#compilations-card3:checked ~ .compilations-expandable3 > div > #card-overlay > #arrow,
+#compilations-card4:checked ~ .compilations-expandable4 > div > #card-overlay > #arrow,
+#compilations-card5:checked ~ .compilations-expandable5 > div > #card-overlay > #arrow,
+#compilations-card6:checked ~ .compilations-expandable6 > div > #card-overlay > #arrow
+{
+    transform: rotateZ(180deg);
+}
+
+.compilations-expandable1,
+.compilations-expandable2,
+.compilations-expandable3,
+.compilations-expandable4,
+.compilations-expandable5,
+.compilations-expandable6
+{
+    transition: 0.1s;
+    transition-property: transform;
+}
+
+.compilations-expandable1:hover,
+.compilations-expandable2:hover,
+.compilations-expandable3:hover,
+.compilations-expandable4:hover,
+.compilations-expandable5:hover,
+.compilations-expandable6:hover
+{
+    transform: translateY(-10px);
+    z-index: 1;
+}
+.compilations-expandable1:active,
+.compilations-expandable2:active,
+.compilations-expandable3:active,
+.compilations-expandable4:active,
+.compilations-expandable5:active,
+.compilations-expandable6:active
+{
+    transform: scale(0.99);
+    z-index: 1;
+}
